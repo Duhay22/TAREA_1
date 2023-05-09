@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+::selection {
+    background-color: black;
+    color: #6af946;
+}
+
+header {
+    background-color: #fba91b;
+    display: flex;
+    gap: 20px;
+    grid-gap: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    grid-gap: 10px;
+}
+
+.menu__item a {
+    background: rgb(11, 219, 238);
+    border: 5px solid rgb(72, 21, 167);
+    color: #fca337;
+    text-decoration: none;
+    padding: 1rem;
+    transition: all 2s;
+}
+
+.menu__item a:hover{
+    background-color: rgb(11, 219, 238);
+    background: rgb(72, 21, 167);
+}
+
+
+/******************* PSEUDOCLASES *******************/
+.menu__item:nth-child(2) a {
+    background: rgb(11, 219, 238);
+    border: 5px solid rgb(72, 21, 167);
+
+    
+}
+
+.menu__item:first-child a {
+    background: rgb(11, 219, 238);
+}
+
+.menu__item:last-child a {
+    background: black;
+}
+
+.menu__item a:empty {
+    background: rgb(13, 242, 208);
+}
+
+.menu__item a:not(.menu__link) {
+    border-color: rgb(24, 218, 232);
+}
+
+.menu__item a:hover {
+    background: #e96acd;
+    color: rgb(23, 230, 245);
+}
+
+
+
+.imagenPrincipal {
+    height: 80vh;
+    background-image: url("../img/paisaje.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 200px;
+}
+
+
+/********** Pseudoelementos ***********/
+.imagenPrincipal h2 {
+    color: #f81515;
+    background-color: rgba(0, 0, 0, 0.596);
+    padding-inline: 15px;
+}
+
+.imagenPrincipal h2::first-letter {
+    color: #f81515;
+}
+
+.imagenPrincipal h2::selection {
+    color: #f81515;
+    color: black;
+}
+
+.imagenPrincipal p {
+    color: #f81515;
+    text-align: center;
+}
+
+.imagenPrincipal p::first-line {
+    color: #f81515;
+}
+
+.imagenPrincipal p::selection {
+    background: black;
+    color: #e96acd;
+}
+
+
+
+.tarjetitas {
+    padding: 60px;
+    display: flex;
+    gap: 30px;
+}
+
+.tarjetita {
+    background-color: #532bf3;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.informacion {
+    padding: 0 20px 20px 20px;
+}
+
+.tarjetita__imagen {
+    max-width: 100%;
+}
+
+.pie {
+    background-color: #532bf3;
+    color: white;
+    padding-block: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjetitados {
+    flex: 1.5;
+}

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2? family= Playfair+Display:wght@400;500;600;700;800;900 & family= Roboto+Slab:wght@200; 300;400;700;800;900 & mostrar=cambiar');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+.menu {
+    list-style-type: none;
+    background-color: #493cf6;
+    padding-block: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.menu__item {
+    display: inline-block;
+    margin-inline: 20px;
+}
+
+.menu__item a {
+    color: rgb(8, 252, 73);
+    text-decoration: none;
+}
+
+.menu__item.active a,
+.menu__item a:hover {
+    text-decoration: underline double;
+}
+
+main {
+    padding: 25px;
+}
+
+/* CARTITAS */
+
+.cartita {
+    width: 30%;
+    background-color: #77e8f3;
+    padding: 10px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-inline: 1.5%;
+    margin-block: 25px;
+    overflow: auto;
+    position: relative;
+    border: 4px double #5b5d5f;
+}
+
+.cartita__imagen {
+    width: 100%;
+}
+
+.cartita__titulo {
+    font-size: 18px;
+}
+
+.cartita__parrafo {
+    font-size: 14px;
+}
+
+.cartita__boton {   
+    background-color: #3fec39;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cartita__imagen,
+.cartita__titulo,
+.cartita__parrafo {
+    margin-bottom: 10px;
+}
+
+.cartita__wpp {
+    width: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* */
+
+.wpp {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+}
